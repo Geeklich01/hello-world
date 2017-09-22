@@ -8,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class CourseComponent
 {
   isActive = true;
+  email = "me@example.com";
 
-  onSave()
+  // onKeyUp($event)
+  // onKeyUp()
+  onKeyUp()
   {
-    console.log("Button was clicked");
+    // if ($event.keyCode === 13) -- commented for another implementation
+    // console.log("ENTER was pressed"); -- commented to try getting values from input event
+    console.log(this.email);
+    
+  }
+
+  onDivClicked()
+  {
+    console.log("Div was clicked");
+  }
+
+  onSave($event)
+  {
+    $event.stopPropagation();
+    console.log("Button was clicked", $event);
   }
 }

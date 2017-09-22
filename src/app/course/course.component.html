@@ -1,4 +1,12 @@
 <button class="btn btn-primary">Simple Button</button>
 <button [class.active]="isActive">Class Binding</button> 
 <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Style Binding</button>
-<button (click)="onSave()">Event Binding</button>
+<div (click)="onDivClicked()">
+    <button (click)="onSave($event)">Event Binding</button>
+</div>
+<!-- <input (keyup)="onKeyUp($event)" /> ++ Commented for another implemantation -->
+<!-- <input (keyup.enter)="onKeyUp()" /> ++ Commented to try getting values from input event -->
+<!-- <input (keyup.enter)="onKeyUp($event)" /> ++ Commented to try # notation? -->
+<!-- <input #email (keyup.enter)="onKeyUp(email.value)" /> ++ Commented for a bidirectional data binding -->
+<!-- <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()" /> ++ Commented for another 2way binding implemntation -->
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
