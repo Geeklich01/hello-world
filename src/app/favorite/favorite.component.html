@@ -1,0 +1,11 @@
+<!-- The implementations I came up with -->
+<!-- <span [class]="isLiked ? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'"  -->
+<!-- (click)="onClick()" aria-hidden="true"></span> -->
+
+<!-- The courses implementation -->
+<span
+  class="glyphicon"
+  [class.glyphicon-star]="isFavorite"
+  [class.glyphicon-star-empty]="!isFavorite"
+  (click)="onClick()"
+></span>
