@@ -7,12 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Code used for Assignment 4
-  tweet = {
-    body: 'her is the body...',
-    likesCount: 10,
-    isLiked: true
-  }
+  // Code used for lesson 64
+  courses = [1];
+  
+  /// Code used for Assignment 4
+  // tweet = {
+  //   body: 'her is the body...',
+  //   likesCount: 10,
+  //   isLiked: true
+  // }
 
   /// Code used for lessons 51 - 62
   // post = {
