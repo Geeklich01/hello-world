@@ -1,11 +1,21 @@
-<!-- The implementations I came up with -->
-<!-- <span [class]="isLiked ? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'"  -->
-<!-- (click)="onClick()" aria-hidden="true"></span> -->
-
-<!-- The courses implementation -->
+<!-- Lesson 71 -->
 <span
+class="glyphicon"
+[ngClass]="{
+  'glyphicon-star': isSelected,
+  'glyphicon-star-empty': !isSelected
+}"
+(click)="onClick()"
+></span>
+
+<!-- The courses implementation - Assignment02 -->
+<!-- <span
   class="glyphicon"
   [class.glyphicon-star]="isSelected"
   [class.glyphicon-star-empty]="!isSelected"
   (click)="onClick()"
-></span>
+></span> -->
+
+<!-- The implementations I came up with -->
+<!-- <span [class]="isLiked ? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'"  -->
+<!-- (click)="onClick()" aria-hidden="true"></span> -->

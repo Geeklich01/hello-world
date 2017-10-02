@@ -7,8 +7,55 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // Lesson 73
+  task = {
+    title: 'Review applications',
+    assignee: null
+  }
+
+  // Lesson 72
+  // canSave = false;
+
+  // Lesson 69
+  // courses;
+
+  // loadCourses()
+  // {
+  //   this.courses = [
+  //     { id: 1, name: 'course1' },
+  //     { id: 2, name: 'course2' },
+  //     { id: 3, name: 'course3' },
+  //   ];
+  // }
+
+  // trackCourse(index, course)
+  // {
+  //   return course ? course.id : undefined;
+  // }
+
+  // Code used for lesson 67 - 68
+  // courses = [
+  //   { id: 1, name: 'course1' },
+  //   { id: 2, name: 'course2' },
+  //   { id: 3, name: 'course3' },
+  // ];
+
+  // onAdd()
+  // {
+  //   this.courses.push({ id:4, name: 'course4' });
+  // }
+
+  // onRemove(course)
+  // {
+  //   let index = this.courses.indexOf(course);
+  //   this.courses.splice(index, 1);
+  // }
+
+  // Code used for lesson 66
+  // viewMode = 'map';
+
   // Code used for lesson 64
-  courses = [1];
+  // courses = [1];
   
   /// Code used for Assignment 4
   // tweet = {
